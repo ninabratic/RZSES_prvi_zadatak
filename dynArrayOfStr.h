@@ -17,7 +17,8 @@ char** read_lines(FILE* txt, int* count) {
     *count = 0;
 
     line_count = 0;
-    while (fgets(line, sizeof(line), txt) != NULL)                             		line_count++;
+    while (fgets(line, sizeof(line), txt) != NULL)     
+	    line_count++;
     
     rewind(txt);
 
